@@ -1,0 +1,4 @@
+creer button qui va au click creer un component qui sera un tableau style trello
+avec dedans un input et un button qui permet de donner un nom,
+et dans ce tableau on pourra creer une carte qui sera editable pour lui donner un nom, avec un button pour confirmer le nom
+puis ça devient iune ligne avec son nom,
