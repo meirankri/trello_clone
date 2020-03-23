@@ -1,26 +1,36 @@
 import { ADD_LIST,
-    ADD_ELEMENT,
+    ADD_CARD,
     REMOVE_LIST,
-    REMOVE_ELEMENT ,ADD_LIST_NAME} from "./actionTypes";
+    REMOVE_CARD ,CLOSE_INPUT,NEW_ELEM,SET_NAME} from "./actionTypes";
 
 
-
+export const newElem = (elemType) => ({
+      type: NEW_ELEM,
+      payload:elemType
+});
+export const setName = (elem,name) => ({
+  type: SET_NAME,
+  elem,
+  name
+});
 export const addList = () => ({
   type: ADD_LIST
 });
-export const addListName = name => ({
-  type: ADD_LIST_NAME,
-  payload: name
-});
-export const addElement = name => ({
-  type: ADD_ELEMENT,
-  payload: name
+
+export const addCard = id => ({
+  type: ADD_CARD,
+  payload: id
 });
 export const removeList = id => ({
     type: REMOVE_LIST,
     payload: id
   });
-  export const removeElement = id => ({
-    type: REMOVE_ELEMENT,
+  export const removeCard = id => ({
+    type: REMOVE_CARD,
     payload: id
   });
+  export const closeInout = input => ({
+    type: CLOSE_INPUT,
+    payload: input
+  });
+  

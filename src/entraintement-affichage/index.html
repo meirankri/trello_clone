@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            background-color: #4BBF6B;
+        }
+        .listContainer{
+            display: inline-block;
+        }
+         .list{
+            margin-right:10px;
+            list-style: none;
+            background-color:#EBECF0;
+            border-radius:3px;
+            width: 272px;
+            display: inline-block;
+            vertical-align: top;
+         }
+         .addList{
+            width: 272px;
+            list-style: none;
+            background-color: #80808033;
+            padding: 10px 8px;
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+         }
+         .listName{
+            padding: 10px 8px;
+            color: #172B4D;
+            display: flex;
+            justify-content: space-between;
+         }
+         .cardList{
+             list-style: none;
+         }
+         .card{
+             background-color: white;
+             border-radius: 3px;
+             margin: 8px 7px;
+             min-height: 20px;
+             padding: 5px;
+             color: #55637C;
+         }
+         .addCard{
+             background-color: initial;
+             cursor: pointer;
+             color: grey;
+         }
+    </style>
+</head>
+<body>
+    <h1>trelllo ouech</h1>
+    <ul class="listContainer">
+       
+        <li class="list">
+            <div class="listName">
+                <span>liste 1</span> <span>...</span>
+            </div>
+            <div class="cardList">
+                <div class="card">card1</div>
+                <div class="card">card2</div>
+                <div class="card addCard">+ Ajouter une autre carte</div>
+            </div>
+        </li>
+        <li class="addList">  <img src="../assets/images/reezocar.svg"/>,
+            Ajouter une Liste</li>
+    </ul>
+</body>
+</html>
